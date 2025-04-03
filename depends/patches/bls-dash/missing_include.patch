@@ -1,0 +1,12 @@
+--- a/src/threshold.hpp
++++ b/src/threshold.hpp
+@@ -8,6 +8,8 @@
+ #include "privatekey.hpp"
+ #include "elements.hpp"
+ 
++#include <memory>
++
+ namespace bls {
+ 
+     namespace Threshold {
+
