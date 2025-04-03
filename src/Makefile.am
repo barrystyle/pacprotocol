@@ -205,6 +205,7 @@ BITCOIN_CORE_H = \
   masternode/masternode-payments.h \
   masternode/masternode-sync.h \
   masternode/masternode-utils.h \
+  memdebug.h \
   memusage.h \
   merkleblock.h \
   messagesigner.h \
@@ -348,6 +349,7 @@ libdash_server_a_SOURCES = \
   masternode/masternode-sync.cpp \
   masternode/masternode-utils.cpp \
   merkleblock.cpp \
+  memdebug.cpp \
   messagesigner.cpp \
   miner.cpp \
   net.cpp \
