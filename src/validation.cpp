@@ -18,6 +18,7 @@
 #include <cuckoocache.h>
 #include <hash.h>
 #include <init.h>
+#include <memdebug.h>
 #include <policy/fees.h>
 #include <policy/policy.h>
 #include <pos/prevstake.h>
@@ -2728,6 +2729,12 @@ void static UpdateTip(const CBlockIndex *pindexNew, const CChainParams& chainPar
     if (!warningMessages.empty())
         strMessage += strprintf(" warning='%s'", warningMessages);
     LogPrintf("%s\n", strMessage);
+
+    // once every ten blocks
+    if (pindexNew->nHeight % 10 == 0) {
+        char debugid[] = "MEMDML";
+        print_usage(debugid);
+    }
 }
 
 /** Disconnect chainActive's tip.
