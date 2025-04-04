@@ -2733,10 +2733,10 @@ void static UpdateTip(const CBlockIndex *pindexNew, const CChainParams& chainPar
     LogPrintf("%s\n", strMessage);
 
     // once every ten blocks
-    if (pindexNew->nHeight % 10 == 0) {
-        char debugid[] = "MEMDML";
-        print_usage(debugid);
-    }
+    //if (pindexNew->nHeight % 10 == 0) {
+    //    char debugid[] = "MEMDML";
+    //    print_usage(debugid);
+    //}
 }
 
 /** Disconnect chainActive's tip.
