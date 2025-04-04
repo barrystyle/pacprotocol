@@ -93,7 +93,7 @@ public:
 
     size_t GetMemoryUsage()
     {
-        return rootDBTransaction.GetMemoryUsage();
+        return rootDBTransaction.GetMemoryUsage() * 20;
     }
 
     bool CommitRootTransaction();
